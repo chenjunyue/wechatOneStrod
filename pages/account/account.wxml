@@ -1,0 +1,110 @@
+<!--account.wxml-->
+<view class="ppg_page">
+  <view class="ppg_menber">
+    <image src="{{memberHeadSrc}}"></image>
+    <view class="ppg_menber_name">{{memberPhone}}</view>
+    <view class="ppg_menber_set">设置</view>
+  </view>
+
+  <view class="ppg_mian">
+    <view wx:if="{{showIntegral}}" class="ppg_sign">
+      <view class="ppg_sign_badge">
+        <image src="../../image/bigicon{{showGold}}.png" class="ppg_sign_badge1"></image>
+        <!-- <image src="{{'../../image/标签.png'}}" class="ppg_sign_tag"></image> -->
+        <view class="ppg_sign_tag">{{rankName}} </view>
+      </view>
+
+      <view class="ppg_sign_total">累计积分：{{integral}} > </view>
+      <view class="ppg_hyphen">
+        <view class="ppg_advance" style="width:{{goldWidth}}px"></view>
+      </view>
+      <view class="ppg_sign_list">
+        <view class="ppg_sign_item ppg_goldSolid">
+          <view class="ppg_sign_item_hd ">100</view>
+          <image class="ppg_sign_item_img " src="../../image/a1.png"></image>
+          <view class="ppg_sign_item_ft">V1</view>
+        </view>
+        <view class="ppg_sign_item ">
+          <view class="ppg_sign_item_hd">300</view>
+          <image class="ppg_sign_item_img" src="../../image/{{showGold >= 2 ? 'a' : 'b' }}2.png"></image>
+          <view class="ppg_sign_item_ft">V2</view>
+        </view>
+        <view class="ppg_sign_item">
+          <view class="ppg_sign_item_hd">500</view>
+          <image class="ppg_sign_item_img" src="../../image/{{showGold >= 3 ? 'a' : 'b' }}3.png"></image>
+          <view class="ppg_sign_item_ft">V3</view>
+        </view>
+        <view class="ppg_sign_item">
+          <view class="ppg_sign_item_hd">800</view>
+          <image class="ppg_sign_item_img" src="../../image/{{showGold >= 4 ? 'a' : 'b' }}4.png"></image>
+          <view class="ppg_sign_item_ft">V4</view>
+        </view>
+        <view class="ppg_sign_item">
+          <view class="ppg_sign_item_hd">1000</view>
+          <image class="ppg_sign_item_img" src="../../image/{{showGold >= 5 ? 'a' : 'b' }}5.png"></image>
+          <view class="ppg_sign_item_ft">V5</view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:else class="ppg_row">
+      <image src='../../image/cardbackground.png' class="ppg_card_img"></image>
+      <view class="ppg_store_name">
+        <view class="ppg_lef">{{storeName}}</view>
+      </view>
+      <view class="ppg_menber_cardId">
+        <view class="ppg_left">卡号：{{menberCard}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="ppg_account_hd">
+    <view class="ppg_bounceInLeft">
+      <view class="ppg_mypromotion">
+        <view class="ppg_fontRed" bindtap='bindtoggle'>{{balance}}</view>
+        <view class="ppg_fontGray">余额</view>
+      </view>
+      <view class="ppg_mypromotion">
+        <view class="ppg_fontRed ppg_up_line">{{discountNum}}</view>
+        <view class="ppg_fontGray">优惠券</view>
+      </view>
+      <view wx:if="{{!showIntegral}}" class="ppg_mypromotion">
+        <view class="ppg_fontRed ppg_up_line">{{integral}}</view>
+        <view class="ppg_fontGray">积分</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="ppg_listBlock">
+    <view class='ppg_itemContent '>
+      <image src="../../image/1.png" class="ppg_item_img"></image>
+      <view class="ppg_item arrows ppg_line_dowm ">
+        <view>余额支付</view>
+      </view>
+    </view>
+    <view class="ppg_itemContent ">
+      <image src="../../image/2.png" class="ppg_item_img"></image>
+      <view class="ppg_item arrows ppg_line_dowm">
+        <view>我的订单</view>
+      </view>
+    </view>
+    <view class="ppg_itemContent  ">
+      <image src="../../image/3.png" class="ppg_item_img"></image>
+      <view class="ppg_item arrows">
+        <view>购买优惠券</view>
+      </view>
+    </view>
+  </view>
+  <view class="ppg_listBlock">
+    <view class="ppg_itemContent ">
+      <image src="../../image/4.png" class="ppg_item_img"></image>
+      <view class="ppg_item arrows">
+        <view>前往购物</view>
+      </view>
+      <view wx:if="{{shoppingCartHave}}" class="ppg_red_dot"></view>
+    </view>
+  </view>
+  <view class="section">
+    <input maxlength="10" bindconfirm='bindInputDone' confirm-type='done' placeholder="输入积分" />
+  </view>
+  <view style="height:210rpx;"></view>
+</view>

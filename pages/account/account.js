@@ -5,11 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    storeName: '榴小莲—拒绝开口榴莲',
-    menberGrade: '普通会员',
+    storeName: '榴小莲—拒绝开口榴莲',  //暂时没用到
+    menberGrade: '普通会员',        //暂时没用到
     memberHeadSrc: '../../image/头像.png', //会员头像图片链接
     memberPhone: '13899998888',    //会员手机号
-    menberCard: '13899998888', //会员卡号
+    menberCard: '1234567890', //会员卡号
     discountNum: 50,           //优惠券的数量
     integral: 50,             //会员积分
     balance: 20.00,          //账户余额。

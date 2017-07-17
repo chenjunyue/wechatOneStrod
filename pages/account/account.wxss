@@ -7,37 +7,38 @@
 
 .ppg_menber {
   background: #fff;
-  height: 100rpx;
+  height: 142rpx;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10);
+  margin-top: 10rpx;
+  position: relative;
 }
 
 .ppg_menber image {
   float: left;
-  width: 70rpx;
-  height: 70rpx;
-  border-radius: 50rpx;
-  margin-left: 2.9%;
-  margin-top: 15rpx;
+  width: 110rpx;
+  height: 110rpx;
+  margin-left: 22rpx;
+  margin-top: 16rpx;
+
 }
 
 .ppg_menber_name {
-  float: left;
   font-size: 32rpx;
-  color: #3a3c4c;
-  line-height: 100rpx;
-  margin-left: 2.7%;
+  color: #757575;
+  line-height: 45rpx;
+  margin-left: 152rpx;
+  padding-top: 40rpx;
 }
 
 .ppg_menber_set {
-  float: right;
-  font-size: 32rpx;
-  color: #3a3c4c;
-  line-height: 100rpx;
-  margin-right: 2.7%;
+  font-size: 26rpx;
+  color: #3A3C4C;
+  line-height: 37rpx;
+  margin-left: 152rpx;
 }
 
 .ppg_mian {
-  height: 364rpx;
+  height: 356rpx;
   width: 100%;
   overflow: hidden;
 }
@@ -87,6 +88,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
+  margin-top: 40rpx;
 }
 
 .ppg_sign_item {
@@ -112,7 +114,7 @@
   height: 4rpx;
   background-color: #bbb;
   position: absolute;
-  top: 264rpx;
+  top: 244rpx;
   right: 50%;
   transform: translateX(50%);
 }
@@ -146,29 +148,20 @@
   overflow: hidden;
   text-align: center;
   position: relative;
-}
+  padding: 10rpx;
+  }
 
 .ppg_card_img {
-  width: 664rpx;
-  height: 384rpx;
+  width: 690rpx;
+  height: 370rpx;
   margin: 0 auto;
   z-index: 0;
 }
 
-.ppg_store_name {
-  position: absolute;
-  right: 76rpx;
-  top: 38rpx;
-  border-radius: 10rpx;
-  padding: 2rpx 10rpx;
-  font-size: 32rpx;
-  background-color: rgba(255, 255, 255, 0.50);
-}
-
 .ppg_menber_cardId {
   position: absolute;
-  left: 80rpx;
-  bottom: 26rpx;
+  right: 64rpx;
+  top: 46rpx;
   border-radius: 10rpx;
   padding: 2rpx 10rpx;
   font-size: 32rpx;
@@ -301,13 +294,10 @@
   border-width: 2px 2px 0 0;
   border-color: #bbb;
   border-style: solid;
-  -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
-  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
-  transform: rotate(45deg);
-  position: relative;
   position: absolute;
-  top: 36rpx;
-  right: 22rpx;
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+  right: 38rpx;
 }
 
 .closeIoc {

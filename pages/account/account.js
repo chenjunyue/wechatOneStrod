@@ -6,18 +6,19 @@ Page({
    */
   data: {
     storeName: '榴小莲—拒绝开口榴莲',  //暂时没用到
-    menberGrade: '普通会员',        //暂时没用到
-    memberHeadSrc: '../../image/头像.png', //会员头像图片链接
-    memberPhone: '13899998888',    //会员手机号
+    cardBackground: '../../image/cardbackground.png', //会员卡片地址
+    menberGrade: '普通会员',   //暂时没用到
+    memberHeadSrc: '../../image/head.png', //会员头像图片链接
+    memberPhone: '13899998888', //会员手机号
     menberCard: '1234567890', //会员卡号
-    discountNum: 50,           //优惠券的数量
-    integral: 50,             //会员积分
-    balance: 20.00,          //账户余额。
-    showIntegral: false,            //是否显示积分页面
-    shoppingCartHave: true,    //是否显示前往购物的小红点
-    goldWidth: 80,            //积分等级页面显示的进度表。单位是px
-    showGold: 1,               //等级表黄金的显示。
-    rankName: 'V1',            //等级的名称
+    discountNum: 50,   //优惠券的数量
+    integral: 50,  //会员积分
+    balance: 20.00,   //账户余额。
+    showIntegral: true,  //是否显示积分页面
+    shoppingCartHave: true,  //是否显示前往购物的小红点
+    goldWidth: 80, //积分等级页面显示的进度表。单位是px
+    showGold: 1,  //等级表黄金的显示。
+    rankName: 'V1',  //等级的名称
   },
 
   /**
@@ -29,11 +30,11 @@ Page({
 
     //接收积分，计算积分的等级。
     var rank = [
-      'v1群众',
-      'v2县令',
-      'v3知府',
-      'v4尚书',
-      'v5宰相',
+      'v1',
+      'v2',
+      'v3',
+      'v4',
+      'v5',
     ];
     var hyphenWidth = (wx.getSystemInfoSync().windowWidth * 0.8) / 8;
     var goldWidth, showGold;

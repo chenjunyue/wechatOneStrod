@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.ppg_menber:active {
+    background-color: #ade1f5;
+}
+
 .ppg_menber {
   background: #fff;
   height: 142rpx;
@@ -19,7 +23,6 @@
   height: 110rpx;
   margin-left: 22rpx;
   margin-top: 16rpx;
-
 }
 
 .ppg_menber_name {
@@ -89,6 +92,7 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   margin-top: 40rpx;
+  position: relative;
 }
 
 .ppg_sign_item {
@@ -114,8 +118,8 @@
   height: 4rpx;
   background-color: #bbb;
   position: absolute;
-  top: 244rpx;
   right: 50%;
+  top:56%;
   transform: translateX(50%);
 }
 
@@ -134,13 +138,10 @@
   background-color: #ffde95;
   float: right;
   position: relative;
-  bottom: 6rpx;
+  bottom: 7rpx;
 }
 
 .ppg_row {
-  /*background: url('http://wx2.sinaimg.cn/small/6806eabfgy1fhmmvdg4qfj20cd06c0v9.jpg') no-repeat center;
-    background-size: 664rpx  334rpx;
-    background-position: bottom;*/
   height: 360rpx;
   color: #3a3c4c;
   font-size: 32rpx;
@@ -148,7 +149,7 @@
   overflow: hidden;
   text-align: center;
   position: relative;
-  padding: 10rpx;
+  padding: 28rpx 10rpx;
   }
 
 .ppg_card_img {
@@ -160,12 +161,13 @@
 
 .ppg_menber_cardId {
   position: absolute;
-  right: 64rpx;
+  right:52rpx;
   top: 46rpx;
   border-radius: 10rpx;
   padding: 2rpx 10rpx;
   font-size: 32rpx;
   background-color: rgba(255, 255, 255, 0.50);
+  line-height: 1;
 }
 
 .menbername {
@@ -190,10 +192,6 @@
   justify-content: space-around;
 }
 
-.ppg_bounceInLeft {
-  /*text-align: center;*/
-}
-
 .ppg_mypromotion {
   text-align: center;
   width: 100%;
@@ -215,14 +213,14 @@
 
 .ppg_fontRed {
   margin-top: 18rpx;
-  margin-bottom: 8rpx;
+  margin-bottom: 6rpx;
   font-size: 32rpx;
   color: #ff5556;
   font-weight: bold;
 }
 
 .ppg_fontGray {
-  margin-top: 8rpx;
+  /*margin-top: 8rpx;*/
   margin-bottom: 14rpx;
   font-size: 26rpx;
   color: #3a3c4c;
@@ -244,18 +242,12 @@
 }
 
 .ppg_item {
-  /*background-image: url('data:image/svg+xml;charset=utf-8,<svg%20viewBox%3D'0%200%2060%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'><path%20d%3D'm60%2061.5-38.25%2038.25-9.75-9.75%2029.25-28.5-29.25-28.5%209.75-9.75z'%20fill%3D'%23ee6b6e'%2F><%2Fsvg>');*//*background-size: 10px 20px;
-    background-repeat: no-repeat;*/
   position: relative;
   padding-left: 86rpx;
   padding-right: 35px;
   font-size: 32rpx;
   color: #3a3c4c;
 }
-
-/*.ppg_itemContent + .ppg_itemContent {
-    border-top: #e5e5e5 1px solid;
-}*/
 
 .ppg_itemContent:active {
   background-color: #ade1f5;
@@ -300,14 +292,6 @@
   right: 38rpx;
 }
 
-.closeIoc {
-  /*background-image: url('../../image/icon_logout@2x.png');*/
-  background-image: url('../../image/icon_logout@2x.png');
-  background-size: 34rpx 38rpx;
-  padding-right: 70rpx;
-  background-repeat: no-repeat;
-  background-position: calc(100% - 30rpx) center;
-}
 
 .ppg_but {
   position: fixed;

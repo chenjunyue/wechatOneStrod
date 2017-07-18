@@ -7,10 +7,11 @@
         <view class="ppg_sign_tag">{{rankName}} </view>
       </view>
       <!-- <view class="ppg_sign_total">累计积分：{{integral}} > </view> -->
-      <view class="ppg_hyphen">
-        <view class="ppg_advance" style="width:{{goldWidth}}px"></view>
-      </view>
+
       <view class="ppg_sign_list">
+          <view class="ppg_hyphen">
+            <view class="ppg_advance" style="width:{{goldWidth}}px"></view>
+          </view>
         <view class="ppg_sign_item ppg_goldSolid">
           <view class="ppg_sign_item_hd ">100</view>
           <image class="ppg_sign_item_img " src="../../image/a1.png"></image>
@@ -40,7 +41,7 @@
     </view>
 
     <view wx:else class="ppg_row">
-      <image src='../../image/cardbackground.png' class="ppg_card_img"></image>
+      <image src="{{cardBackground}}" class="ppg_card_img"></image>
       <!-- <view class="ppg_store_name">
         <view class="ppg_lef">{{storeName}}</view>
       </view> -->
@@ -69,7 +70,7 @@
   </view>
 
 
-    <view class="ppg_menber arrows" >
+    <view class="ppg_menber arrows " >
       <image src="{{memberHeadSrc}}"></image>
       <view class="ppg_menber_name">你好！ {{memberPhone}}</view>
       <view class="ppg_menber_set">个人设置</view>
@@ -107,5 +108,5 @@
   <view class="section">
     <input maxlength="10" bindconfirm='bindInputDone' confirm-type='done' placeholder="输入积分" />
   </view>
-  <view style="height:210rpx;"></view>
+  <view style="height:160rpx;"></view>
 </view>

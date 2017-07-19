@@ -1,14 +1,21 @@
 {
   "pages": [
-    "pages/account/account",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/account/setting/setting",
+      "pages/account/passwordSetting/passwordSetting",
+ 
+    "pages/account/integral/integral",
+    "pages/account/pay/pay",
+    "pages/account/headSetting/headSetting",
+    "pages/account/account/account",
+    "pages/account/balance/balance",
+    "pages/account/setting/setting",
+    "pages/index/index"
 
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#3C3E4D",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "#FFF"
   }
 }

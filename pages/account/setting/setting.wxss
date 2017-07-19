@@ -1,0 +1,100 @@
+/* setting.wxss */
+@import '../../../weui.wxss';
+.page {
+    font-size: 32rpx;
+    color: #3A3C4C;
+    background-color: #f7f7f7;
+}
+.weui-cells {
+    margin-top: 0;
+}
+.weui-cells::after {
+    border-bottom:1rpx solid transparent;
+}
+.weui-cells::before {
+    border-top:1rpx solid transparent;
+}
+
+.weui-cell::before {
+    left: 56rpx;
+}
+
+.weui-cell__ft_in-access::after {
+    height: 18rpx;
+    width: 18rpx;
+    right: 22rpx;
+}
+.weui-cell__ft_in-access {
+    position: static;
+}
+
+.ppg_setList{
+    padding: 16rpx 56rpx;
+    margin-top: 0rpx;
+    height: 100rpx;
+    box-sizing: border-box;
+}
+.arrows::before {
+  content: " ";
+  display: inline-block;
+  height: 16rpx;
+  width: 16rpx;
+  border-width: 2px 2px 0 0;
+  border-color: #bbb;
+  border-style: solid;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+  right: 38rpx;
+}
+.ppg_setImg {
+    height: 142rpx;
+}
+.ppg_set_head {
+    width: 110rpx;
+    height: 110rpx;
+    margin-top: 16rpx;
+    margin-bottom: 16rpx;
+}
+.ppg_input_typ {
+    font-size: 32rpx;
+    color: #BBBBBB;
+}
+
+.ppg_line_h {
+    height: 68rpx;
+    min-height: 68rpx;
+    line-height: 68rpx;
+}
+
+.ppg_text_w {
+    width: 102rpx;
+    margin-right: 30rpx;
+    text-align-last:  justify;
+    font-size: 32rpx;
+    color: #3A3C4C;
+    /*font-size: 32rpx;
+    color: #3A3C4C;*/
+}
+
+.ppg_boxsho {
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10);
+    margin-bottom: 10rpx;
+    box-sizing: border-box;
+    border-top: 0.1rpx solid transparent;
+    border-bottom: 0.1rpx solid transparent;
+    background-color: #fff;
+}
+.ppg_but_fd {
+    margin: 20rpx 46rpx;
+    background: #FFFFFF;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10);
+    border-radius: 8px;
+    font-size: 32rpx;
+}
+
+/*有信息后的样式*/
+.ppg_right_sty {
+    font-size: 32rpx;
+    color: #666;
+}

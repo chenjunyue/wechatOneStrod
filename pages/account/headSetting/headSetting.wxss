@@ -1,0 +1,24 @@
+/* headSetting.wxss */
+@import '../../../weui.wxss';
+.page {
+    font-size: 32rpx;
+    color: #3A3C4C;
+    background-color: #f7f7f7;
+}
+
+.ppg_headImg {
+    height: 600rpx;
+}
+.ppg_headImg image{
+    height: 100%;
+    width: 100%;
+}
+
+.ppg_but_fd {
+    margin: 20rpx 46rpx;
+    background: #FFFFFF;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10);
+    border-radius: 8px;
+      font-size: 32rpx;
+    color: #3A3C4C;
+}

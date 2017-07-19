@@ -1,0 +1,69 @@
+/* pay.wxss */
+/*@import '../../weui.wxss';*/
+
+.page {
+    font-size: 32rpx;
+    color: #3A3C4C;
+    background-color: #f7f7f7;
+}
+
+.ppg_balance {
+    height: 100rpx;
+    padding:0 50rpx;
+    line-height: 100rpx;
+    margin-bottom: 25rpx;
+    background: #FFFFFF;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10);
+}
+
+.ppg_balance_title {
+    display: inline-block;
+    color: #3A3C4C;
+}
+.ppg_balance_num {
+    color: #FF5556;
+    display: inline-block;
+}
+
+.ppg_pay_wexinIoc {
+    width: 68rpx;
+    height: 68rpx;
+    margin: 36rpx 0rpx;
+    float: left;
+}
+.ppg_wexin {
+    height: 140rpx;
+    line-height: 140rpx;
+}
+.ppg_pay_wexin_title {
+    display: inline-block;
+    color: #666666;
+    margin-left: 30rpx;
+}
+.ppg_pay_num {
+    height: 110rpx;
+}
+
+.ppg_paynum_title {
+    float: left;
+}
+
+.ppg_pay_input {
+    padding-top:24rpx;
+    padding-left:30rpx;
+
+}
+.ppg_input_typ {
+    color: #BBBBBB;
+}
+.ppg_but_fd {
+    margin: 40rpx 46rpx;
+    background: #BBBBBB;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10);
+    border-radius: 8rpx;
+    color: #fff;
+    font-size: 32rpx;
+}
+.ppg_red {
+    background-color: #FF5556;
+}

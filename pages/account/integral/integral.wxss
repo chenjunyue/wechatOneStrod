@@ -1,0 +1,80 @@
+/* integral.wxss *//* balance.wxss */
+@import '../../../weui.wxss';
+.page {
+    font-size: 32rpx;
+    color: #3A3C4C;
+    background-color: #f7f7f7;
+}
+
+.ppg_balance {
+    height: 100rpx;
+    padding:0 22rpx;
+    line-height: 100rpx;
+    margin-bottom: 10rpx;
+    background: #FFFFFF;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10);
+}
+
+.ppg_balance_title {
+    width: 100%;
+display: inline-block;
+}
+.ppg_balance_num {
+    color: #2A2A2A ;
+    display: inline-block;
+}
+.ppg_balance_pay {
+    color: #FF5556;
+    float: right;
+}
+
+.ppg_balance_list {
+    background: #FFFFFF;
+}
+
+.ppg_balance_item {
+    height: 138rpx;
+    border-bottom: 1px solid #E8E8E8;
+    position: relative;
+}
+
+.arrows::before {
+  content: " ";
+  display: inline-block;
+  height: 16rpx;
+  width: 16rpx;
+  border-width: 2px 2px 0 0;
+  border-color: #bbb;
+  border-style: solid;
+  position: absolute;
+  top: 48%;
+  transform: rotate(45deg) translateY(-50%);
+  right: 32rpx;
+}
+.ppg_balance_item1 {
+    position: relative;
+}
+
+.ppg_balance_item_img {
+    float: left;
+    width: 82rpx;
+    height: 82rpx;
+    margin: 28rpx 34rpx;
+}
+.ppg_balance_item_typ {
+    padding-top: 28rpx;
+    font-size: 32rpx;
+    color: #3A3C4C;
+}
+
+.ppg_balance_item_time {
+    margin-bottom: 28rpx;
+    font-size: 26rpx;
+    color: #666666;
+}
+.ppg_balance_item_money {
+    position: absolute;
+    right: 60rpx;
+    top: 0;
+    line-height: 138rpx;
+}

@@ -1,0 +1,17 @@
+<!--pay.wxml-->
+<view class="page">
+    <view class="ppg_balance">
+      <view class="ppg_balance_title">已有账户余额：<view class="ppg_balance_num">999.99</view><text style="color:#2A2A2A">元</text>
+      </view>
+    </view>
+    <view class="ppg_balance ppg_wexin">
+        <image src="../../../image/weixin@2x.png" class="ppg_pay_wexinIoc"></image>
+        <view class="ppg_pay_wexin_title">微信充值</view>
+    </view>
+    <view class=" ppg_balance ppg_pay_num">
+        <view class="ppg_paynum_title">金额</view>
+        <input class="ppg_pay_input " type="number" focus="true" placeholder-class='ppg_input_typ' placeholder="请输入充值金额" />
+    </view>
+    <button class="ppg_but_fd  {{index ? 'ppg_red' : '' }}" type="">下一步</button>
+    <view style="height:350px;"></view>
+</view>

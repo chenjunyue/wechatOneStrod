@@ -6,9 +6,9 @@ Page({
    */
   data: {
     storeName: '榴小莲—拒绝开口榴莲',  //暂时没用到
-    cardBackground: '../../image/cardbackground.png', //会员卡片地址
+    cardBackground: '../../../image/cardbackground.png', //会员卡片地址
     menberGrade: '普通会员',   //暂时没用到
-    memberHeadSrc: '../../image/head.png', //会员头像图片链接
+    memberHeadSrc: '../../../image/head.png', //会员头像图片链接
     memberPhone: '13899998888', //会员手机号
     menberCard: '1234567890', //会员卡号
     discountNum: 50,   //优惠券的数量

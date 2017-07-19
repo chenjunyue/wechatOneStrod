@@ -3,7 +3,7 @@
   <view class="ppg_mian">
     <view wx:if="{{showIntegral}}" class="ppg_sign">
       <view class="ppg_sign_badge">
-        <image src="../../image/bigicon{{showGold}}.png" class="ppg_sign_badge1"></image>
+        <image src="../../../image/bigicon{{showGold}}.png" class="ppg_sign_badge1"></image>
         <view class="ppg_sign_tag">{{rankName}} </view>
       </view>
       <!-- <view class="ppg_sign_total">累计积分：{{integral}} > </view> -->
@@ -72,25 +72,25 @@
 
     <view class="ppg_menber arrows " >
       <image src="{{memberHeadSrc}}"></image>
-      <view class="ppg_menber_name">你好！ {{memberPhone}}</view>
+      <view class="ppg_menber_name">你好！{{memberPhone}}</view>
       <view class="ppg_menber_set">个人设置</view>
     </view>
 
   <view class="ppg_listBlock">
     <view class='ppg_itemContent '>
-      <image src="../../image/1.png" class="ppg_item_img"></image>
+      <image src="../../../image/1.png" class="ppg_item_img"></image>
       <view class="ppg_item arrows ppg_line_dowm ">
         <view>余额支付</view>
       </view>
     </view>
     <view class="ppg_itemContent ">
-      <image src="../../image/2.png" class="ppg_item_img"></image>
+      <image src="../../../image/2.png" class="ppg_item_img"></image>
       <view class="ppg_item arrows ppg_line_dowm">
         <view>我的订单</view>
       </view>
     </view>
     <view class="ppg_itemContent  ">
-      <image src="../../image/4.png" class="ppg_item_img"></image>
+      <image src="../../../image/4.png" class="ppg_item_img"></image>
       <view class="ppg_item arrows">
         <view>购买优惠券</view>
       </view>
@@ -98,7 +98,7 @@
   </view>
   <view class="ppg_listBlock">
     <view class="ppg_itemContent ">
-      <image src="../../image/3.png" class="ppg_item_img"></image>
+      <image src="../../../image/3.png" class="ppg_item_img"></image>
       <view class="ppg_item arrows">
         <view>前往购物</view>
       </view>

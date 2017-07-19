@@ -1,0 +1,86 @@
+<!--setting.wxml-->
+<view class="page">
+  <view class="weui-cells ppg_boxsho">
+    <!-- <view class="weui-cell weui-cell_access">
+      <image src="../../../image/blackHead@2x.png" class='ppg_set_head'></image>
+      <view class=" weui-cell__ft"></view>
+    </view> -->
+
+    <navigator url="" class="weui-cell weui-cell_access ppg_setList ppg_setImg " hover-class="weui-cell_active">
+      <image src="../../../image/head@2x.png" class='ppg_set_head '></image>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <view class="weui-cell ppg_setList weui-cell_access">
+      <view class="weui-cell__hd">
+        <view class="weui-label ppg_text_w">姓名</view>
+      </view>
+      <view class="weui-cell__bd">
+          <input class=" ppg_line_h weui-input " type="text" placeholder-class='ppg_input_typ' placeholder="木木三" />
+        <!-- <view class="ppg_right_sty">木木三</view> -->
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+    </view>
+    <view class="weui-cell ppg_setList">
+      <view class="weui-cell__hd ppg_text_w">会员号</view>
+      <view class="weui-cell__bd ppg_line_h">18250602177</view>
+    </view>
+    <view class="weui-cell ppg_setList">
+      <view class="weui-cell__hd ppg_text_w">手机号</view>
+      <view class="weui-cell__bd ppg_line_h">18250602177</view>
+    </view>
+    <view class="weui-cell ppg_setList">
+      <view class="weui-cell__hd">
+        <view class="weui-label ppg_text_w ">密码</view>
+      </view>
+      <view class="weui-cell__bd">
+        <view class="ppg_right_sty">已设置</view>
+        <!-- <input class=" ppg_line_h weui-input" password="true" type="text" placeholder-class='ppg_input_typ' placeholder="请输入6位以上数字" /> -->
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+
+    </view>
+  </view>
+  <view class="weui-cells ppg_boxsho">
+    <view class="weui-cell ppg_setList">
+      <view class="weui-cell__hd">
+        <view class="weui-label ppg_text_w">生日</view>
+      </view>
+      <!-- <view class="weui-cell__bd">
+        <input class="ppg_line_h weui-input" type="number" placeholder-class='ppg_input_typ' placeholder="请输入生日日期" />
+      </view> -->
+
+      <view class="weui-cell__bd">
+        <picker mode="date" value="{{date}}" start="1950-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="weui-input">{{date}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-cell ppg_setList">
+      <view class="weui-cell__hd">
+        <view class="weui-label ppg_text_w">地址</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class=" ppg_line_h weui-input" type="text" placeholder-class='ppg_input_typ' placeholder="请输入收货地址" />
+      </view>
+    </view>
+    <view class="weui-cell ppg_setList">
+      <view class="weui-cell__hd">
+        <view class="weui-label ppg_text_w">Q  Q</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class=" ppg_line_h weui-input" type="number" placeholder-class='ppg_input_typ' placeholder="请输入QQ号码" />
+      </view>
+    </view>
+    <view class="weui-cell ppg_setList">
+      <view class="weui-cell__hd">
+        <view class="weui-label ppg_text_w">邮箱</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="ppg_line_h weui-input" type="text" placeholder-class='ppg_input_typ' placeholder="请输入邮箱地址" />
+      </view>
+    </view>
+  </view>
+  <button class="weui-btn ppg_but_fd" type="">保存</button>
+  <button class="weui-btn ppg_but_fd" type="">退出账户</button>
+  <view style="height:120rpx;"></view>
+</view>

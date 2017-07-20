@@ -1,0 +1,26 @@
+/* balancePay.wxss */
+
+.ppg_page {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.ppg_page text{
+    font-size: 32rpx;
+    color: #666666;
+    line-height: 100rpx;
+}
+.page_pay_QRcode {
+    margin: 0rpx 40rpx 20rpx 40rpx;
+    width: auto;
+    background-color: #fff;
+}
+.page_pay_QRcode image {
+    width: 527rpx;
+    height: 638rpx;
+    margin: 46rpx 72rpx;
+}
+.page_pay_ft {
+    font-size: 32rpx;
+    color: #666666;
+    height: 200rpx;
+}

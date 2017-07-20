@@ -1,0 +1,9 @@
+<!--balancePay.wxml-->
+<view class="ppg_page">
+  <text>该功能用于向商家当面付款</text>
+  <view class="page_pay_QRcode">
+      <image src="../../../image/QRcode@2x.png"></image>
+  </view>
+  <view class="page_pay_ft" bindtap="bindReturn">点击退出</view>
+<view style="height:160rpx;"></view>
+</view>

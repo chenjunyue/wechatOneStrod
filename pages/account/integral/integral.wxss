@@ -74,7 +74,7 @@ display: inline-block;
 }
 .ppg_balance_item_money {
     position: absolute;
-    right: 60rpx;
+    right: 30rpx;
     top: 0;
     line-height: 138rpx;
 }

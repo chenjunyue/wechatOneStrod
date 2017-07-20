@@ -8,12 +8,12 @@
 
   </view>
   <view class="ppg_balance_list">
-    <view class="ppg_balance_item arrows">
+    <view class="ppg_balance_item ">
       <image src="../../../image/getIntegral@2x.png" class="ppg_balance_item_img"></image>
       <view class="ppg_balance_item1">
           <view class="ppg_balance_item_typ">获得积分</view>
           <view class="ppg_balance_item_time">2017.12.12 06:00</view>
-          <view class="ppg_balance_item_money">+ 100</view>
+          <view class="ppg_balance_item_money">+100</view>
       </view>
     </view>
 

@@ -1,16 +1,15 @@
 {
   "pages": [
-    "pages/account/setting/setting",
-      "pages/account/passwordSetting/passwordSetting",
- 
+    "pages/account/integral/integral",
+    "pages/account/account/account",
+    "pages/account/passwordSetting/passwordSetting",
     "pages/account/integral/integral",
     "pages/account/pay/pay",
     "pages/account/headSetting/headSetting",
-    "pages/account/account/account",
     "pages/account/balance/balance",
     "pages/account/setting/setting",
-    "pages/index/index"
-
+    "pages/index/index",
+    "pages/account/balancePay/balancePay"
   ],
   "window": {
     "backgroundTextStyle": "light",

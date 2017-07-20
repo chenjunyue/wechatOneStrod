@@ -21,9 +21,6 @@ Page({
     rankName: 'V1',  //等级的名称
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
 
     var integral = 200;
@@ -62,27 +59,30 @@ Page({
 
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function () {
 
   },
+  bindSet: function (e){
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+      console.log(e.currentTarget.dataset.inof);
+     //跳转到个人设置页面
+      var key = e.currentTarget.dataset.inof
+      var urlObj = {
+          setting: '../setting/setting',
+          balancePay: '../balancePay/balancePay',
+          balance: '../balance/balance',
+          integral:'../integral/integral',
+
+      }
+      var path = urlObj[key]
+      if (path != undefined) {
+          wx.navigateTo({
+              url: path,
+          })
+      }
+
 
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
 
   changIn: function (mun) {
     var integral = parseInt(mun, 10)

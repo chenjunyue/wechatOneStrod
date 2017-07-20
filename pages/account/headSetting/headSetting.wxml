@@ -2,11 +2,11 @@
 
 <view class="page">
 <view class="ppg_headImg">
-<image src="../../../image/blackHeadBig@2x.png" mode="aspectFill"></image>
+<image src="{{headImgUrl}}" mode="aspectFill"></image>
 </view>
 
-<button class="weui-btn ppg_but_fd" type="">从相册选一张</button>
-<button class="weui-btn ppg_but_fd" type="">拍一张照片</button>
+<button class="weui-btn ppg_but_fd" type="" bindtap="bindGetImg" data-imgurl="album">从相册选一张</button>
+<button class="weui-btn ppg_but_fd" type="" bindtap="bindGetImg" data-imgurl="camera">拍一张照片</button>
 <view style="height:200px;"></view>
 
 </view>

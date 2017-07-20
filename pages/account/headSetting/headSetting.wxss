@@ -22,3 +22,7 @@
       font-size: 32rpx;
     color: #3A3C4C;
 }
+
+.ppg_but_fd:active {
+  background-color:  #ade1f5;
+}

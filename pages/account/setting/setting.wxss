@@ -34,6 +34,7 @@
     height: 100rpx;
     box-sizing: border-box;
 }
+
 .arrows::before {
   content: " ";
   display: inline-block;
@@ -65,6 +66,8 @@
     height: 68rpx;
     min-height: 68rpx;
     line-height: 68rpx;
+    font-size: 32rpx;
+    color: #666;
 }
 
 .ppg_text_w {
@@ -91,6 +94,9 @@
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10);
     border-radius: 8px;
     font-size: 32rpx;
+}
+.ppg_avt:active {
+    background-color: #ade1f5;
 }
 
 /*有信息后的样式*/

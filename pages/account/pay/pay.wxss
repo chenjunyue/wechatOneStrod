@@ -42,6 +42,7 @@
 }
 .ppg_pay_num {
     height: 110rpx;
+    line-height: 110rpx;
 }
 
 .ppg_paynum_title {
@@ -49,9 +50,11 @@
 }
 
 .ppg_pay_input {
-    padding-top:24rpx;
+    color: #FF5556;
+    position:relative;
+    top:50%;
+    transform:translateY(-52%);
     padding-left:30rpx;
-
 }
 .ppg_input_typ {
     color: #BBBBBB;

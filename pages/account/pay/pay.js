@@ -1,66 +1,53 @@
 // pay.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
+
   data: {
-  
+    butRed:false,
+    inputVlue:''
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
   
   },
+  inspectPay:function(num){
+    for(var i=0;i<num.length; i++){
+      var a = '0123456789'.includes(num[i])
+      if(!a){
+        return false
+      }
+    return true
+    }
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
+  bindDonePayIn: function (event) {
+    var va = event.detail.value
+    if (va != null && this.inspectPay(va)) {
+      this.setData({
+        butRed: true,
+        inputVlue: va
+      })
+    } else {
+      this.setData({
+        butRed: false,
+        inputVlue: va
+      })
+    }
   },
+  bindPayBlur: function (event) {
+    var va = event.detail.value 
+    if (va != null && this.inspectPay(va)){
+      this.setData({
+        butRed: true,
+        inputVlue: va
+      })
+    }else {
+      this.setData({
+        butRed: false, 
+        inputVlue: va
+      })
+    }
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  }
+ 
 })

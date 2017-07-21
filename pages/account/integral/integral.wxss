@@ -16,8 +16,10 @@
 }
 
 .ppg_balance_title {
+      font-size: 32rpx;
+    color: #3A3C4C;
     width: 100%;
-display: inline-block;
+    display: inline-block;
 }
 .ppg_balance_num {
     color: #2A2A2A ;

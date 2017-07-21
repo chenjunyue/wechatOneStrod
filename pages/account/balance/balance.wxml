@@ -1,22 +1,22 @@
 <!--balance.wxml-->
 <view class="page">
   <view class="ppg_balance">
-    <view class="ppg_balance_title">余额：
-      <view class="ppg_balance_num">999.99元</view>
-      <view class="ppg_balance_pay">我要充值</view>
+    <view class="ppg_balance_title">余额：<view class="ppg_balance_num">999.99元</view>
+      <view class="ppg_balance_pay" bindtap="bindGoPay">我要充值</view>
     </view>
 
   </view>
   <view class="ppg_balance_list">
+    <block wx:for="{{balanceList}}" wx:key="*this">
     <view class="ppg_balance_item arrows">
-      <image src="../../../image/payof@2x.png" class="ppg_balance_item_img"></image>
+      <image src="../../../image/{{item.consumption ? 'pay' : 'payof'}}@2x.png" class="ppg_balance_item_img"></image>
       <view class="ppg_balance_item1">
-          <view class="ppg_balance_item_typ">充值</view>
+          <view class="ppg_balance_item_typ">{{item.consumption ? '支付' : '充值'}}</view>
           <view class="ppg_balance_item_time">2017.12.12 06:00</view>
-          <view class="ppg_balance_item_money">+ 29.9</view>
+          <view class="ppg_balance_item_money">{{item.consumption ? '-' : '+'}}{{item.balance}}</view>
       </view>
     </view>
-
+    </block>
     
 
   </view>

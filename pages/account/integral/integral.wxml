@@ -1,24 +1,21 @@
 <!--integral.wxml-->
 <view class="page">
   <view class="ppg_balance">
-    <view class="ppg_balance_title">积分：
-      <view class="ppg_balance_num">200</view>
+    <view class="ppg_balance_title">积分：<view class="ppg_balance_num">200</view>
       <view class="ppg_balance_pay">积分规则</view>
     </view>
-
   </view>
   <view class="ppg_balance_list">
+   <block wx:for="{{integralList}}" wx:key='*this'>
     <view class="ppg_balance_item ">
-      <image src="../../../image/getIntegral@2x.png" class="ppg_balance_item_img"></image>
+      <image src="../../../image/{{item.getIntegral ? 'getIntegral' : 'integralBuy'}}@2x.png" class="ppg_balance_item_img"></image>
       <view class="ppg_balance_item1">
-          <view class="ppg_balance_item_typ">获得积分</view>
-          <view class="ppg_balance_item_time">2017.12.12 06:00</view>
-          <view class="ppg_balance_item_money">+100</view>
+          <view class="ppg_balance_item_typ">{{item.getIntegral ? item.getIntegralType : '积分抵扣'}}</view>
+          <view class="ppg_balance_item_time">{{item.time}}</view>
+          <view class="ppg_balance_item_money">{{item.getIntegral ? '+' : '-'}}{{item.integral}}</view>
       </view>
     </view>
-
-
-
+   </block>  
   </view>
 
 </view>

@@ -5,9 +5,9 @@
   box-sizing: border-box;
 }
 
-.ppg_menber:active {
+/* .ppg_menber:active {
     background-color: #ade1f5;
-}
+} */
 
 .ppg_menber {
   background: #fff;
@@ -249,9 +249,9 @@
   color: #3a3c4c;
 }
 
-.ppg_itemContent:active {
+/* .ppg_itemContent:active {
   background-color: #ade1f5;
-}
+} */
 
 .ppg_line_dowm {
   border-bottom: #e5e5e5 1px solid;

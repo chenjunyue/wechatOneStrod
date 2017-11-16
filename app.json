@@ -1,5 +1,6 @@
 {
   "pages": [
+        "pages/account/onSale/onSale",
     "pages/account/account/account",
     "pages/account/passwordSetting/passwordSetting",
     "pages/account/integral/integral",
@@ -8,7 +9,9 @@
     "pages/account/balance/balance",
     "pages/account/setting/setting",
     "pages/index/index",
+    "pages/account/login/login",
     "pages/account/balancePay/balancePay"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
